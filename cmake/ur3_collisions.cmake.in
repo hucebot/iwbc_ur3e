@@ -1,0 +1,8 @@
+# - Config file for the ur3_collisions package
+@PACKAGE_INIT@
+include(CMakeFindDependencyMacro)
+
+find_dependency(inria_wbc REQUIRED)
+
+include("${CMAKE_CURRENT_LIST_DIR}/ur3_collisionsTargets.cmake")
+
