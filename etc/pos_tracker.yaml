@@ -1,0 +1,13 @@
+CONTROLLER:
+  name: pos-tracker
+  base_path: ../etc
+  tasks: tasks.yaml
+  urdf: ur3e.urdf
+  configurations: configurations.srdf 
+  ref_config: start
+  floating_base: false
+  floating_base_joint_name: ""
+  dt: 0.001
+  closed_loop: false
+  verbose: false
+  mimic_dof_names : []

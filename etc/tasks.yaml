@@ -1,6 +1,6 @@
 ee:
     type: se3
-    tracked: flange-tool0
+    tracked: wrist_3_joint
     weight: 100.0
     kp: 30.0
     mask: 111111
