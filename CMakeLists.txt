@@ -17,3 +17,4 @@ target_link_libraries(test_controller PUBLIC inria_wbc::inria_wbc RobotDART::Sim
 if (NOT ${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
     set_target_properties(test_controller PROPERTIES LINK_FLAGS "-Wl,--no-as-needed")
 endif()
+

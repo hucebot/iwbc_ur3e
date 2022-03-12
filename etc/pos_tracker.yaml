@@ -2,6 +2,7 @@ CONTROLLER:
   name: pos-tracker
   base_path: ../etc
   tasks: tasks.yaml
+  frames: frames.yaml
   urdf: ur3e.urdf
   configurations: configurations.srdf 
   ref_config: start

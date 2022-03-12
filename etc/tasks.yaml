@@ -1,11 +1,83 @@
 ee:
     type: se3
     tracked: wrist_3_joint
-    weight: 100.0
+    weight: 10.0
     kp: 30.0
     mask: 111111
 posture:
     type: posture
-    weight: 0.75
+    weight: 0.15
     kp: 30.0
     ref: start
+ee_collisions-1:
+    type: self-collision
+    tracked: wrist_1_joint
+    radius: 0.05
+    avoided: 
+        shoulder_lift_joint: 0.075
+        v_shoulder_1: 0.09
+        floor-1: 10.0
+        o0: 0.025
+        o1: 0.025
+        o2: 0.025
+        o3: 0.025
+        o4: 0.025
+    weight: 1000
+    kp: 100.0
+    kd: 2500.0
+    m: 0.25
+    margin: 0.01
+ee_collisions-2:
+    type: self-collision
+    tracked: wrist_2_joint
+    radius: 0.05
+    avoided: 
+        shoulder_lift_joint: 0.075
+        v_shoulder_1: 0.09
+        floor-1: 10.0
+        o0: 0.025
+        o1: 0.025
+        o2: 0.025
+        o3: 0.025
+        o4: 0.025
+    weight: 1000
+    kp: 50.0
+    kd: 2500.0
+    m: 0.25
+    margin: 0.01
+ee_collisions-3:
+    type: self-collision
+    tracked: wrist_3_joint
+    radius: 0.04
+    avoided: 
+        shoulder_lift_joint: 0.075
+        v_shoulder_1: 0.09
+        floor-1: 10.0
+        o0: 0.025
+        o1: 0.025
+        o2: 0.025
+        o3: 0.025
+        o4: 0.025
+    weight: 1000
+    kp: 100.0
+    kd: 2500.0
+    m: 0.25
+    margin: 0.01
+ee_collisions-vw2:
+    type: self-collision
+    tracked: v_wrist_2
+    radius: 0.04
+    avoided: 
+        shoulder_lift_joint: 0.075
+        v_shoulder_1: 0.09
+        floor-1: 10.0
+        o0: 0.025
+        o1: 0.025
+        o2: 0.025
+        o3: 0.025
+        o4: 0.025
+    weight: 1000
+    kp: 100.0
+    kd: 2500.0
+    m: 0.25
+    margin: 0.01
